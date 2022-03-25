@@ -91,8 +91,8 @@ Y #datos normalizados
 scores<-Y%*%eigen.vec
 
 # Nombramos las columnas PC1...PC8
-colnames(scores)<-c("PC1","PC2","PC3","PC4","PC5",
-                    "PC6", "PC7","PC8")
+colnames(scores)<-c("PC1","PC2","PC3","PC4", "PC5",
+                   "PC6","PC7", "PC8")
 
 # visualizamos
 scores
@@ -117,7 +117,7 @@ apply(x, 2, var)
 acp<-prcomp(x, center=TRUE, scale=TRUE)
 acp
 
-# Generaci?n del gr?fico screeplot
+# Generacion del gr?, fico screeplot
 plot(acp, type="l")
 
 # Visualizar el resumen
